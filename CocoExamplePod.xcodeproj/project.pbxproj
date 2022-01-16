@@ -14,6 +14,7 @@
 		D946E2762794653200E5B2DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D946E2742794653200E5B2DF /* Main.storyboard */; };
 		D946E2782794653300E5B2DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D946E2772794653300E5B2DF /* Assets.xcassets */; };
 		D946E27B2794653300E5B2DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D946E2792794653300E5B2DF /* LaunchScreen.storyboard */; };
+		D946E2832794698B00E5B2DF /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946E2822794698B00E5B2DF /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D946E2772794653300E5B2DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D946E27A2794653300E5B2DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D946E27C2794653300E5B2DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D946E2822794698B00E5B2DF /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				D946E21C2794638D00E5B2DF /* CocoExamplePod.h */,
 				D946E21D2794638D00E5B2DF /* Info.plist */,
+				D946E2822794698B00E5B2DF /* SwiftyLib.swift */,
 			);
 			path = CocoExamplePod;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				TargetAttributes = {
 					D946E2182794638D00E5B2DF = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					D946E26B2794653200E5B2DF = {
 						CreatedOnToolsVersion = 12.1;
@@ -199,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D946E2832794698B00E5B2DF /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +364,7 @@
 		D946E2222794638D00E5B2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -376,6 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,6 +391,7 @@
 		D946E2232794638D00E5B2DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
